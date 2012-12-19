@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+    
+  <parent>
+  	<groupId>example.wsg</groupId>
+  	<artifactId>parent</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<relativePath>../g9-ws</relativePath>
+  </parent>
+  
+  <artifactId>service</artifactId>
+  
+  <build>
+  	<plugins>
+		<plugin>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-maven-plugin</artifactId>
+			<version>8.1.8.v20121106</version>
+			<!-- <configuration>
+				<stopPort>9666</stopPort>
+				<stopKey>foo</stopKey>
+				<connectors>
+					<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+						<port>8060</port>
+						<maxIdleTime>60000</maxIdleTime>
+					</connector>
+				</connectors>
+			</configuration>
+			 -->
+		</plugin>
+	</plugins>
+</build>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>${project.groupId}</groupId>
+  		<artifactId>domain</artifactId>
+  		<version>${project.version}</version>
+  	</dependency>
+  	<dependency>
+	    <groupId>org.springframework.ws</groupId>
+	    <artifactId>spring-ws-core</artifactId>
+	    <version>2.0.4.RELEASE</version>
+	    <scope>compile</scope>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.jetty.aggregate</groupId>
+		<artifactId>jetty-all</artifactId>
+		<version>8.1.5.v20120716</version>
+	</dependency>
+	
+  </dependencies>
+  
+  
+  
+</project>

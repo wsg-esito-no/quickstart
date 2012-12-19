@@ -1,4 +1,13 @@
 *.class
+*/target/
+*~
+*.lock
+*.bak
+*.new
+*.ldb
+*/.settings/
+*.log
+*.classpath
 
 # Package Files #
 *.jar
