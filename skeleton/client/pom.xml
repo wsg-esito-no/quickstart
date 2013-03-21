@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
     
   <parent>
-  	<groupId>example.wsg</groupId>
+  	<groupId>com.wsg.sample</groupId>
   	<artifactId>parent</artifactId>
   	<version>0.0.1-SNAPSHOT</version>
   	<relativePath>../g9-ws</relativePath>
@@ -19,13 +19,13 @@
   	<dependency>
 	    <groupId>org.springframework.ws</groupId>
 	    <artifactId>spring-ws-core</artifactId>
-	    <version>2.0.4.RELEASE</version>
+  		<version>${spring.ws.version}</version>
 	    <scope>compile</scope>
 	</dependency>
   	<dependency>
   		<groupId>junit</groupId>
   		<artifactId>junit</artifactId>
-  		<version>4.11</version>
+  		<version>${junit.version}</version>
   		<scope>test</scope>
   	</dependency>
   </dependencies>
